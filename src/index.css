@@ -1,0 +1,132 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    /* EcoSentinel Brand Colors */
+    --primary: 210 90% 25%; /* Deep blue for authority/trust */
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 214 30% 95%;
+    --secondary-foreground: 210 90% 25%;
+
+    --muted: 214 30% 95%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 198 70% 50%; /* Light blue for interactive elements */
+    --accent-foreground: 0 0% 98%;
+
+    /* Disaster Severity Colors */
+    --danger: 0 85% 60%; /* Red for critical alerts */
+    --danger-foreground: 0 85% 20%; /* Darker red for text on light danger background */
+    
+    --warning: 45 95% 55%; /* Yellow/orange for warnings */
+    --warning-foreground: 45 95% 20%; /* Darker orange for text on light warning background */
+    
+    --safe: 120 60% 45%; /* Green for safe zones */
+    --safe-foreground: 120 60% 20%; /* Darker green for text on light safe background */
+    
+    --info: 210 85% 65%; /* Blue for informational */
+    --info-foreground: 210 85% 20%; /* Darker blue for text on light info background */
+
+    --destructive: 0 85% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 210 90% 25%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 198 70% 60%;
+    --accent-foreground: 0 0% 98%;
+
+    /* Dark mode disaster colors */
+    --danger: 0 75% 55%;
+    --danger-foreground: 0 75% 85%; /* Lighter red for text on dark danger background */
+    
+    --warning: 45 85% 65%;
+    --warning-foreground: 45 85% 85%; /* Lighter orange for text on dark warning background */
+    
+    --safe: 120 50% 50%;
+    --safe-foreground: 120 50% 85%; /* Lighter green for text on dark safe background */
+    
+    --info: 210 75% 70%;
+    --info-foreground: 210 75% 85%; /* Lighter blue for text on dark info background */
+
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
